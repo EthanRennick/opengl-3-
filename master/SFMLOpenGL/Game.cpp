@@ -38,8 +38,8 @@ typedef struct
 	float color[3];
 } Vertex;
 
-Vertex vertex[6];
-GLubyte triangles[6]; //triangle points
+Vertex vertex[8];
+GLubyte triangles[36]; //triangle points
 
 /* Variable to hold the VBO identifier */
 GLuint vbo[1];
@@ -51,33 +51,49 @@ void Game::initialize()
 
 	glewInit();
 
+
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glTranslatef(0, 0, -8);
+	glMatrixMode(GL_PROJECTION); //small, far away
+	glLoadIdentity();
+	gluPerspective(45.0, window.getSize().x / window.getSize().y, 1.0, 500.0);
+	glMatrixMode(GL_MODELVIEW); //object moves, not us, not our view of it. its mass doesnt change
+
 	/* Vertices counter-clockwise winding */
 
-	//face one
-	vertex[0].coordinate[0] = -0.5f;
-	vertex[0].coordinate[1] = -0.5f;
-	vertex[0].coordinate[2] = 0.0f;
 
-	vertex[1].coordinate[0] = -0.5f;
-	vertex[1].coordinate[1] = 0.5f;
-	vertex[1].coordinate[2] = 0.0f;
+	vertex[0].coordinate[0] = -1.0; // 2
+	vertex[0].coordinate[1] = -1.0;
+	vertex[0].coordinate[2] = 1.0;
 
-	vertex[2].coordinate[0] = 0.5f;
-	vertex[2].coordinate[1] = 0.5f;
-	vertex[2].coordinate[2] = 0.0f;
+	vertex[1].coordinate[0] = 1.0; //3
+	vertex[1].coordinate[1] = -1.0;
+	vertex[1].coordinate[2] = 1.0;
 
-	//face two
-	vertex[3].coordinate[0] = 0.5f; 
-	vertex[3].coordinate[1] = 0.5f;  
-	vertex[3].coordinate[2] = 0.0f;
+	vertex[2].coordinate[0] = 1.0; //4
+	vertex[2].coordinate[1] = 1.0;
+	vertex[2].coordinate[2] = 1.0;
 
-	vertex[4].coordinate[0] = 0.5f; 
-	vertex[4].coordinate[1] = -0.5f;  
-	vertex[4].coordinate[2] = 0.0f;
+	vertex[3].coordinate[0] = -1.0; //1
+	vertex[3].coordinate[1] = 1.0;  
+	vertex[3].coordinate[2] = 1.0;
 
-	vertex[5].coordinate[0] = -0.5f; 
-	vertex[5].coordinate[1] = -0.5f;  
-	vertex[5].coordinate[2] = 0.0f;
+	vertex[4].coordinate[0] = -1.0; 
+	vertex[4].coordinate[1] = -1.0;  
+	vertex[4].coordinate[2] = -1.0;
+
+	vertex[5].coordinate[0] = 1.0; 
+	vertex[5].coordinate[1] = -1.0;  
+	vertex[5].coordinate[2] = -1.0;
+
+	//face 3
+	vertex[6].coordinate[0] = 1.0;
+	vertex[6].coordinate[1] = 1.0;
+	vertex[6].coordinate[2] = -1.0;
+
+	vertex[7].coordinate[0] = -1.0;
+	vertex[7].coordinate[1] = 1.0;
+	vertex[7].coordinate[2] = -1.0;
 
 	vertex[0].color[0] = 0.1f;
 	vertex[0].color[1] = 1.0f;
@@ -103,9 +119,16 @@ void Game::initialize()
 	vertex[5].color[1] = 1.0f;
 	vertex[5].color[2] = 0.0f;
 
+	vertex[6].color[0] = 0.1f;
+	vertex[6].color[1] = 1.0f;
+	vertex[6].color[2] = 0.0f;
 
-	triangles[0] = 0;   triangles[1] = 1;   triangles[2] = 2;
-	triangles[3] = 3;   triangles[4] = 4;   triangles[5] = 5;
+	vertex[7].color[0] = 0.2f;
+	vertex[7].color[1] = 1.0f;
+	vertex[7].color[2] = 0.0f;
+
+	triangles[0] = 3;   triangles[1] = 0;   triangles[2] = 1;
+	triangles[3] = 1;   triangles[4] = 0;   triangles[5] = 2;
 
 	/* Create a new VBO using VBO id */
 	glGenBuffers(1, vbo);
@@ -114,12 +137,12 @@ void Game::initialize()
 	glBindBuffer(GL_ARRAY_BUFFER, vbo[0]);
 
 	/* Upload vertex data to GPU */
-	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 6, vertex, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 36, vertex, GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 	glGenBuffers(1, &index);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, index);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLubyte) * 6, triangles, GL_STATIC_DRAW);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLubyte) * 36, triangles, GL_STATIC_DRAW);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
@@ -128,32 +151,26 @@ void Game::update()
 	elapsed = clock.getElapsedTime();
 
 	if (elapsed.asSeconds() >= 1.0f)
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
-		clock.restart();
-
-		if (!flip)
+		for (int i = 0; i < 6; i++)
 		{
-			flip = true;
-		}
-		else
-			flip = false;
-	}
-
-	if (flip)
-	{
-		rotationAngle += 0.005f;
-
-		if (rotationAngle > 360.0f)
-		{
-			rotationAngle -= 360.0f;
+			vertex[i].coordinate[0] += 0.0001f;
+			vertex[i].coordinate[1] += 0.0001f;
+			vertex[i].coordinate[2] += 0.0001f;
 		}
 	}
 
-	//Change vertex data
-	vertex[0].coordinate[0] += -0.0001f;
-	vertex[0].coordinate[1] += -0.0001f;
-	vertex[0].coordinate[2] += -0.0001f;
-
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	{
+		for (int i = 0; i < 6; i++)
+		{
+			vertex[i].coordinate[0] -= 0.0001f;
+			vertex[i].coordinate[1] -= 0.0001f;
+			vertex[i].coordinate[2] -= 0.0001f;
+		}
+	}
 	//cout << "Update up" << endl;
 }
 
@@ -170,7 +187,7 @@ void Game::render()
 
 	/*	As the data positions will be updated by the this program on the
 		CPU bind the updated data to the GPU for drawing	*/
-	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 6, vertex, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 36, vertex, GL_STATIC_DRAW);
 
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
@@ -181,7 +198,7 @@ void Game::render()
 	/*	Draw Triangle from VBO	(set where to start from as VBO can contain 
 		model compoents that are and are not to be drawn )	*/
 	glVertexPointer(3, GL_FLOAT, sizeof(Vertex), (char*)NULL + 0);
-	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_BYTE, (char*)NULL + 0);
+	glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_BYTE, (char*)NULL + 0);
 
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
