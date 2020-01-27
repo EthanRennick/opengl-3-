@@ -1,0 +1,60 @@
+﻿  Game.cpp
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(82,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(83,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(84,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(86,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(87,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(88,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(90,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(91,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(92,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(94,28): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(95,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(96,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(98,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(99,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(100,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(102,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(103,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(104,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(107,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(108,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(109,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(111,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(112,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(113,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(115,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(116,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(117,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(119,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(120,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(121,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(123,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(124,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(125,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(127,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(128,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(129,29): warning C4244:  '=': conversion from 'float' to 'GLubyte', possible loss of data
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(225,36): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(265,35): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(306,36): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(349,35): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(391,40): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(431,39): warning C4305:  'argument': truncation from 'double' to 'float'
+  SFMLOpenGL.vcxproj -> C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\master\Debug\SFMLOpenGL.exe
+  C:\SFML-2.5.1\bin\openal32.dll
+  C:\SFML-2.5.1\bin\sfml-audio-2.dll
+  C:\SFML-2.5.1\bin\sfml-audio-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-graphics-2.dll
+  C:\SFML-2.5.1\bin\sfml-graphics-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-network-2.dll
+  C:\SFML-2.5.1\bin\sfml-network-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-system-2.dll
+  C:\SFML-2.5.1\bin\sfml-system-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-window-2.dll
+  C:\SFML-2.5.1\bin\sfml-window-d-2.dll
+  11 File(s) copied
+  C:\glew-1.13.0\bin\Release\Win32\glew32.dll
+  C:\glew-1.13.0\bin\Release\Win32\glewinfo.exe
+  C:\glew-1.13.0\bin\Release\Win32\visualinfo.exe
+  3 File(s) copied
