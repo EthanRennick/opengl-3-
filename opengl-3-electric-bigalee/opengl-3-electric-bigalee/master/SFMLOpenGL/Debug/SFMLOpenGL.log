@@ -1,0 +1,24 @@
+﻿  Game.cpp
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(187,37): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(227,36): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(268,37): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(311,36): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(356,42): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\SFMLOpenGL\Game.cpp(375,41): warning C4305:  'argument': truncation from 'double' to 'float'
+  SFMLOpenGL.vcxproj -> C:\Users\C00240102\Desktop\opengl-3-electric-bigalee\opengl-3-electric-bigalee\master\Debug\SFMLOpenGL.exe
+  C:\SFML-2.5.1\bin\openal32.dll
+  C:\SFML-2.5.1\bin\sfml-audio-2.dll
+  C:\SFML-2.5.1\bin\sfml-audio-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-graphics-2.dll
+  C:\SFML-2.5.1\bin\sfml-graphics-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-network-2.dll
+  C:\SFML-2.5.1\bin\sfml-network-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-system-2.dll
+  C:\SFML-2.5.1\bin\sfml-system-d-2.dll
+  C:\SFML-2.5.1\bin\sfml-window-2.dll
+  C:\SFML-2.5.1\bin\sfml-window-d-2.dll
+  11 File(s) copied
+  C:\Users\C00240102\Desktop\glew-1.13.0-win32\glew-1.13.0\bin\Release\Win32\glew32.dll
+  C:\Users\C00240102\Desktop\glew-1.13.0-win32\glew-1.13.0\bin\Release\Win32\glewinfo.exe
+  C:\Users\C00240102\Desktop\glew-1.13.0-win32\glew-1.13.0\bin\Release\Win32\visualinfo.exe
+  3 File(s) copied
